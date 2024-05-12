@@ -15,6 +15,9 @@ for (let i=0;i<16;i++){
     const div=document.createElement("div");
     div.classList.add("single");
     div.setAttribute("style", "border-style: solid;aspect-ratio: 1/1;flex: 1;");
+    div.addEventListener("mouseenter", ()=>{
+        div.style.backgroundColor="red";
+    });
     divHolder.appendChild(div);
 }
 divcontainer.appendChild(divHolder);
